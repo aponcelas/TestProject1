@@ -13,10 +13,8 @@
             <div class="card">
                 <div class="card-header">Login</div>
                 <div class="card-body">
-                    <!-- login.php -->
                 <form action="" method="post" id="loginForm">
                     <input type="hidden" name="r" value="dologin">
-                    <!-- Existing code... -->
                     <div class="form-group">
                         <label for="identification_code">Codi d'identificació</label>
                         <input type="text" class="form-control" id="identification_code" name="identification_code" required>
