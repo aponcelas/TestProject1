@@ -33,6 +33,11 @@ class Container
         $this->sql = $conn->getConnection();
     }
 
+    public function getCodi()
+    {
+        return $this->config['codi'];
+    }
+
     public function response()
     {
         return new \Emeset\Response();
@@ -43,16 +48,11 @@ class Container
         return new \Emeset\Request();
     }
 
-    public function apartaments() {
-        return new \Daw\Apartaments($this->sql);
-    }
-    
-    public function users() {
-        return new \Daw\Users($this->sql);
+    public function inscripcio()
+    {
+    return new \Daw\Inscripcio($this->sql);
     }
 
-    public function reserves() {
-        return new \Daw\Reserves($this->sql);
-    }
+
     
 }
