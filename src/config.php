@@ -5,7 +5,7 @@ $config = [
         "server" => "localhost",
         "username" => "root",
         "password" => "",
-        "database" => "inscripcions"
+        "database" => "participants"
     ],
     "codi" => "1234"
 ];

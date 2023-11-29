@@ -42,20 +42,14 @@ $(document).ready(function () {
             type: "POST",
             url: "index.php?r=validar",
             data: { code: identificationCode },
+            dataType: 'json',
             success: function (data) {
-                console.log(data);
-            
+                console.log(data);   
+                
+                console.log(data.status);
 
                 if (data.status === 'valid') {
-                    $.ajax({
-                        type: "GET",
-                        url: "index.php?r=dologin",
-                        success: function (consultasData) {
-                        },
-                        error: function (xhr, status, error) {
-                            console.error(xhr.responseText);
-                        }
-                    });
+                    window.location.href = "index.php?r=consultar";
                 }
             },
             error: function (xhr, status, error) {

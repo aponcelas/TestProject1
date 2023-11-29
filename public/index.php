@@ -44,7 +44,7 @@ if ($r == '') {
 } else if ($r == 'confirmacio') {
     controllerConfirmacio($request, $response, $container);
 } else if ($r == 'consultar') {
-    isLogged($request, $response, $container, "controllerConsultar");
+    controllerConsultar($request, $response, $container);
 } else if ($r == 'login') {
     controllerLogin($request, $response, $container);
 } else if ($r == 'dologin') {
